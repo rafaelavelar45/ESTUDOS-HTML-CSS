@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <h1>Imagens dinamicas</h1>
+    <!--Para está tag funcionar tenho que colocar em ordem de baixo para cima a tag e os sources de tamanho em forma decrescente de baixo para cima-->
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor
+        experiêcia &#128515;</p>
+    <p>
+        <picture>
+
+            <source media="(max-width: 700px)" srcset="imagens/imagem300.jpg" type="image/jpg">
+            <source media="(max-width: 1000px)" srcset="imagens/imagem700.jpg" type="image/jpg">
+            <img src="imagens/imagem1000.jpg" alt="imagem paisagem">
+        </picture>
+    </p>
+</body>
+
+</html>
