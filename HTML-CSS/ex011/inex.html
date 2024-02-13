@@ -23,15 +23,14 @@
         tente abrir esse site em varios dispositivos diferente ou simplesmente
         aumente e diminua o tomanho do seu navegador
     </p>
-    <picture>
-        <source media="(max-width: 750px)" srcset="imagens/foto-p.png"type="image/png" />
+    <picture> <!--está tag onde podemos manipular imagens com varios sources, assim para video e audio-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png"type="image/png" /> <!--media tamanho maximo da img, srcset diretorio do arquivo, type qual tipo-->
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png" />
         <img src="imagens/foto-g.png" alt="imagem flexivel" />
     </picture>
     <h1>Reproduzindo Áudio</h1>
     <p>Vamos aprender a reproduzir áudios em HTML5</p>
-    <audio preload="metadata" controls loop>
-        <!--loop reiniciar a musica , controls controle de play , -->
+    <audio preload="metadata" controls loop> <!--loop reiniciar a musica , controls controle de play , -->
         <source src="midia/guanacast-33.mp3" type="audio/mpeg" />
         <source src="midia/guanacast-33.ogg" type="audio/ogg" />
         <source src="midia/guanacast-33.wav" type="audio/wav" />
